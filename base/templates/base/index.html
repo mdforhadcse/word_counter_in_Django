@@ -1,0 +1,13 @@
+<h1><a href="{% url 'home' %}"> Word Counter</a></h1>
+
+<h3>Input your text below: </h3>
+
+<form method="GET" action="">
+    <textarea name="words" rows="25" cols="100"></textarea> <br>
+    <input type="submit">
+</form>
+
+
+{% if number_of_words != 0 %}
+    The amount of words is {{ number_of_words }}
+{% endif %}
